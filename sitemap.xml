@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://coil-kt.github.io/coil/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/README-ko/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/README-tr/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/README-zh/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/changelog/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://coil-kt.github.io/coil/code_of_conduct/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/compose/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/contributing/</loc>
          <lastmod>2022-08-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -12,6 +47,11 @@
     </url>
     <url>
          <loc>https://coil-kt.github.io/coil/getting_started/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/gifs/</loc>
          <lastmod>2022-08-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -46,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://coil-kt.github.io/coil/svgs/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://coil-kt.github.io/coil/targets/</loc>
          <lastmod>2022-08-14</lastmod>
          <changefreq>daily</changefreq>
@@ -62,6 +107,11 @@
     </url>
     <url>
          <loc>https://coil-kt.github.io/coil/upgrading/</loc>
+         <lastmod>2022-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://coil-kt.github.io/coil/videos/</loc>
          <lastmod>2022-08-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
