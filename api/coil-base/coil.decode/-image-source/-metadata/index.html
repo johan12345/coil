@@ -4,10 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>Metadata</title>
 <link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../../styles/style.css" rel="Stylesheet">
 <link href="../../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -18,7 +26,8 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../../scripts/main.js" defer></script>
-<script type="text/javascript" src="../../../../scripts/prism.js" async></script></head>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
     <div id="leftToggler"><span class="icon-toggler"></span></div>
@@ -38,17 +47,17 @@ if(savedDarkMode === true){
     </div>
     <div id="main">
 <div class="main-content" id="content" pageids="coil-base::coil.decode/ImageSource.Metadata///PointingToDeclaration//1776664950">
-  <div class="breadcrumbs"><a href="../../../index.html">coil-base</a><span class="delimiter">/</span><a href="../../index.html">coil.decode</a><span class="delimiter">/</span><a href="../index.html">ImageSource</a><span class="delimiter">/</span><a href="index.html">Metadata</a></div>
+  <div class="breadcrumbs"><a href="../../../index.html">coil-base</a><span class="delimiter">/</span><a href="../../index.html">coil.decode</a><span class="delimiter">/</span><a href="../index.html">ImageSource</a><span class="delimiter">/</span><span class="current">Metadata</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Metadata</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation">@</span><a href="../../../coil.annotation/-experimental-coil-api/index.html"><span class="token annotation">ExperimentalCoilApi</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Metadata</a><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">A marker class for metadata for an <a href="../index.html">ImageSource</a>.</p><p class="paragraph"><strong>Heavily prefer</strong> using <a href="../source.html">source</a> or <a href="../file.html">file</a> to decode the image's data instead of relying on information provided in the metadata. It's the responsibility of a <a href="../../../coil.fetch/-fetcher/index.html">Fetcher</a> to create a <a href="https://square.github.io/okio/3.x/okio/okio/okio/-buffered-source/index.html">BufferedSource</a> or <a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a> that can be easily read irrespective of where the image data is located. A <a href="../../-decoder/index.html">Decoder</a> should be as decoupled as possible from where the image is being fetched from.</p><p class="paragraph">This method is provided as a way to pass information to decoders that don't support decoding a <a href="https://square.github.io/okio/3.x/okio/okio/okio/-buffered-source/index.html">BufferedSource</a> and want to avoid creating a temporary file (e.g. <a href="https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.html">ImageDecoder</a>, <a href="https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever.html">MediaMetadataRetriever</a>, etc.).</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../coil.annotation/-experimental-coil-api/index.html"><span class="token annotation builtin">ExperimentalCoilApi</span></a></div></div><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">Metadata</a></div><p class="paragraph">A marker class for metadata for an <a href="../index.html">ImageSource</a>.</p><p class="paragraph"><strong>Heavily prefer</strong> using <a href="../source.html">source</a> or <a href="../file.html">file</a> to decode the image's data instead of relying on information provided in the metadata. It's the responsibility of a <a href="../../../coil.fetch/-fetcher/index.html">Fetcher</a> to create a <a href="https://square.github.io/okio/3.x/okio/okio/okio/-buffered-source/index.html">BufferedSource</a> or <a href="https://developer.android.com/reference/kotlin/java/io/File.html">File</a> that can be easily read irrespective of where the image data is located. A <a href="../../-decoder/index.html">Decoder</a> should be as decoupled as possible from where the image is being fetched from.</p><p class="paragraph">This method is provided as a way to pass information to decoders that don't support decoding a <a href="https://square.github.io/okio/3.x/okio/okio/okio/-buffered-source/index.html">BufferedSource</a> and want to avoid creating a temporary file (e.g. <a href="https://developer.android.com/reference/kotlin/android/graphics/ImageDecoder.html">ImageDecoder</a>, <a href="https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever.html">MediaMetadataRetriever</a>, etc.).</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="See also">See also</button><button class="section-tab" data-togglable="Inheritors">Inheritors</button></div>
     <div class="tabs-section-body">
-      <h2 class="">See also</h2>
+      <h4 class="">See also</h4>
       <div data-togglable="See also">
-        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-depenent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-asset-metadata/index.html"><span>coil.</span><wbr><span>decode.</span><wbr><span>Asset</span><wbr><span><span>Metadata</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-content-metadata/index.html"><span>coil.</span><wbr><span>decode.</span><wbr><span>Content</span><wbr><span><span>Metadata</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-resource-metadata/index.html"><span>coil.</span><wbr><span>decode.</span><wbr><span>Resource</span><wbr><span><span>Metadata</span></span></a></div></span></div><div><div class="title"><div data-togglable="See also"></div></div></div></div></div></div></div></div></div>
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-asset-metadata/index.html"><span>Asset</span><wbr><span><span>Metadata</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-content-metadata/index.html"><span>Content</span><wbr><span><span>Metadata</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../-resource-metadata/index.html"><span>Resource</span><wbr><span><span>Metadata</span></span></a></div></span></div><div></div></div></div></div></div></div></div>
       </div>
       <h2 class="tabbedcontent">Constructors</h2>
       <div class="table" data-togglable="Constructors"><a data-name="2130494056%2FConstructors%2F1776664950" anchor-label="Metadata" id="2130494056%2FConstructors%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
@@ -61,7 +70,7 @@ if(savedDarkMode === true){
                 </span></span></div>
             <div>
               <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-metadata.html"><span class="token function">Metadata</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-metadata.html"><span class="token function">Metadata</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
               </div>
             </div>
           </div>
