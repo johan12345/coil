@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DefaultRequestOptions</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>coil</span>            </a>    </div>
+    <div>2.3.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="coil-base::coil.request/DefaultRequestOptions///PointingToDeclaration//1776664950">
+  <div class="breadcrumbs"><a href="../../index.html">coil-base</a><span class="delimiter">/</span><a href="../index.html">coil.request</a><span class="delimiter">/</span><span class="current">DefaultRequestOptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Default</span><wbr><span>Request</span><wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">DefaultRequestOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>interceptorDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.Main.immediate<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fetcherDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>decoderDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transformationDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transitionFactory<span class="token operator">: </span><a href="../../coil.transition/-transition/-factory/index.html">Transition.Factory</a><span class="token operator"> = </span>Transition.Factory.NONE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>precision<span class="token operator">: </span><a href="../../coil.size/-precision/index.html">Precision</a><span class="token operator"> = </span>Precision.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bitmapConfig<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config.html">Bitmap.Config</a><span class="token operator"> = </span>DEFAULT_BITMAP_CONFIG<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowHardware<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowRgb565<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>placeholder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>error<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fallback<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>memoryCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>diskCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>networkCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED</span></span><span class="token punctuation">)</span></div><p class="paragraph">A set of default options that are used to fill in unset <a href="../-image-request/index.html">ImageRequest</a> values.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="See also">See also</button></div>
+    <div class="tabs-section-body">
+      <h4 class="">See also</h4>
+      <div data-togglable="See also">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="See also"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div data-togglable="See also"><div class="table" data-togglable="See also"><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../../coil/-image-loader/defaults.html"><span>Image</span><wbr><span>Loader.</span><wbr><span>defaults</span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><a href="../-image-request/defaults.html"><span>Image</span><wbr><span>Request.</span><wbr><span>defaults</span></a></div></span></div><div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1623712336%2FConstructors%2F1776664950" anchor-label="DefaultRequestOptions" id="1623712336%2FConstructors%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-default-request-options.html"><span>Default</span><wbr><span>Request</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1623712336%2FConstructors%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-default-request-options.html"><span class="token function">DefaultRequestOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interceptorDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.Main.immediate<span class="token punctuation">, </span></span><span class="parameter ">fetcherDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter ">decoderDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter ">transformationDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>Dispatchers.IO<span class="token punctuation">, </span></span><span class="parameter ">transitionFactory<span class="token operator">: </span><a href="../../coil.transition/-transition/-factory/index.html">Transition.Factory</a><span class="token operator"> = </span>Transition.Factory.NONE<span class="token punctuation">, </span></span><span class="parameter ">precision<span class="token operator">: </span><a href="../../coil.size/-precision/index.html">Precision</a><span class="token operator"> = </span>Precision.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter ">bitmapConfig<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config.html">Bitmap.Config</a><span class="token operator"> = </span>DEFAULT_BITMAP_CONFIG<span class="token punctuation">, </span></span><span class="parameter ">allowHardware<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">allowRgb565<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">placeholder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">fallback<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">memoryCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED<span class="token punctuation">, </span></span><span class="parameter ">diskCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED<span class="token punctuation">, </span></span><span class="parameter ">networkCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>CachePolicy.ENABLED</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-190089393%2FFunctions%2F1776664950" anchor-label="copy" id="-190089393%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="copy.html"><span><span>copy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-190089393%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="copy.html"><span class="token function">copy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">interceptorDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>this.interceptorDispatcher<span class="token punctuation">, </span></span><span class="parameter ">fetcherDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>this.fetcherDispatcher<span class="token punctuation">, </span></span><span class="parameter ">decoderDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>this.decoderDispatcher<span class="token punctuation">, </span></span><span class="parameter ">transformationDispatcher<span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a><span class="token operator"> = </span>this.transformationDispatcher<span class="token punctuation">, </span></span><span class="parameter ">transitionFactory<span class="token operator">: </span><a href="../../coil.transition/-transition/-factory/index.html">Transition.Factory</a><span class="token operator"> = </span>this.transitionFactory<span class="token punctuation">, </span></span><span class="parameter ">precision<span class="token operator">: </span><a href="../../coil.size/-precision/index.html">Precision</a><span class="token operator"> = </span>this.precision<span class="token punctuation">, </span></span><span class="parameter ">bitmapConfig<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config.html">Bitmap.Config</a><span class="token operator"> = </span>this.bitmapConfig<span class="token punctuation">, </span></span><span class="parameter ">allowHardware<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>this.allowHardware<span class="token punctuation">, </span></span><span class="parameter ">allowRgb565<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>this.allowRgb565<span class="token punctuation">, </span></span><span class="parameter ">placeholder<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>this.placeholder<span class="token punctuation">, </span></span><span class="parameter ">error<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>this.error<span class="token punctuation">, </span></span><span class="parameter ">fallback<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>this.fallback<span class="token punctuation">, </span></span><span class="parameter ">memoryCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>this.memoryCachePolicy<span class="token punctuation">, </span></span><span class="parameter ">diskCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>this.diskCachePolicy<span class="token punctuation">, </span></span><span class="parameter ">networkCachePolicy<span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a><span class="token operator"> = </span>this.networkCachePolicy</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DefaultRequestOptions</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1894163902%2FFunctions%2F1776664950" anchor-label="equals" id="-1894163902%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1894163902%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1357259676%2FFunctions%2F1776664950" anchor-label="hashCode" id="-1357259676%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="hash-code.html"><span>hash</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1357259676%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="953231722%2FProperties%2F1776664950" anchor-label="allowHardware" id="953231722%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="allow-hardware.html"><span>allow</span><wbr><span><span>Hardware</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="953231722%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="953231722%2FProperties%2F1776664950" anchor-label="allowHardware" id="953231722%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="allow-hardware.html">allowHardware</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="932623275%2FProperties%2F1776664950" anchor-label="allowRgb565" id="932623275%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="allow-rgb565.html"><span>allow</span><wbr><span><span>Rgb565</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="932623275%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="932623275%2FProperties%2F1776664950" anchor-label="allowRgb565" id="932623275%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="allow-rgb565.html">allowRgb565</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1317785874%2FProperties%2F1776664950" anchor-label="bitmapConfig" id="-1317785874%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="bitmap-config.html"><span>bitmap</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1317785874%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1317785874%2FProperties%2F1776664950" anchor-label="bitmapConfig" id="-1317785874%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="bitmap-config.html">bitmapConfig</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config.html">Bitmap.Config</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-163674640%2FProperties%2F1776664950" anchor-label="decoderDispatcher" id="-163674640%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="decoder-dispatcher.html"><span>decoder</span><wbr><span><span>Dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-163674640%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-163674640%2FProperties%2F1776664950" anchor-label="decoderDispatcher" id="-163674640%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="decoder-dispatcher.html">decoderDispatcher</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1689815164%2FProperties%2F1776664950" anchor-label="diskCachePolicy" id="-1689815164%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="disk-cache-policy.html"><span>disk</span><wbr><span>Cache</span><wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1689815164%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1689815164%2FProperties%2F1776664950" anchor-label="diskCachePolicy" id="-1689815164%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="disk-cache-policy.html">diskCachePolicy</a><span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-183257709%2FProperties%2F1776664950" anchor-label="error" id="-183257709%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="error.html"><span><span>error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-183257709%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-183257709%2FProperties%2F1776664950" anchor-label="error" id="-183257709%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="error.html">error</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-893075587%2FProperties%2F1776664950" anchor-label="fallback" id="-893075587%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="fallback.html"><span><span>fallback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-893075587%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-893075587%2FProperties%2F1776664950" anchor-label="fallback" id="-893075587%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="fallback.html">fallback</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-414922131%2FProperties%2F1776664950" anchor-label="fetcherDispatcher" id="-414922131%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="fetcher-dispatcher.html"><span>fetcher</span><wbr><span><span>Dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-414922131%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-414922131%2FProperties%2F1776664950" anchor-label="fetcherDispatcher" id="-414922131%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="fetcher-dispatcher.html">fetcherDispatcher</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-844957329%2FProperties%2F1776664950" anchor-label="interceptorDispatcher" id="-844957329%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="interceptor-dispatcher.html"><span>interceptor</span><wbr><span><span>Dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-844957329%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-844957329%2FProperties%2F1776664950" anchor-label="interceptorDispatcher" id="-844957329%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="interceptor-dispatcher.html">interceptorDispatcher</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1315936920%2FProperties%2F1776664950" anchor-label="memoryCachePolicy" id="-1315936920%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="memory-cache-policy.html"><span>memory</span><wbr><span>Cache</span><wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1315936920%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1315936920%2FProperties%2F1776664950" anchor-label="memoryCachePolicy" id="-1315936920%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="memory-cache-policy.html">memoryCachePolicy</a><span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="569184281%2FProperties%2F1776664950" anchor-label="networkCachePolicy" id="569184281%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="network-cache-policy.html"><span>network</span><wbr><span>Cache</span><wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569184281%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="569184281%2FProperties%2F1776664950" anchor-label="networkCachePolicy" id="569184281%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="network-cache-policy.html">networkCachePolicy</a><span class="token operator">: </span><a href="../-cache-policy/index.html">CachePolicy</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1996684792%2FProperties%2F1776664950" anchor-label="placeholder" id="-1996684792%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="placeholder.html"><span><span>placeholder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1996684792%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1996684792%2FProperties%2F1776664950" anchor-label="placeholder" id="-1996684792%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="placeholder.html">placeholder</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1585363747%2FProperties%2F1776664950" anchor-label="precision" id="-1585363747%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="precision.html"><span><span>precision</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1585363747%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1585363747%2FProperties%2F1776664950" anchor-label="precision" id="-1585363747%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="precision.html">precision</a><span class="token operator">: </span><a href="../../coil.size/-precision/index.html">Precision</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1271967631%2FProperties%2F1776664950" anchor-label="transformationDispatcher" id="1271967631%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="transformation-dispatcher.html"><span>transformation</span><wbr><span><span>Dispatcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1271967631%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="1271967631%2FProperties%2F1776664950" anchor-label="transformationDispatcher" id="1271967631%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="transformation-dispatcher.html">transformationDispatcher</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/-coroutine-dispatcher/index.html">CoroutineDispatcher</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1040556730%2FProperties%2F1776664950" anchor-label="transitionFactory" id="-1040556730%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="transition-factory.html"><span>transition</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1040556730%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1040556730%2FProperties%2F1776664950" anchor-label="transitionFactory" id="-1040556730%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="transition-factory.html">transitionFactory</a><span class="token operator">: </span><a href="../../coil.transition/-transition/-factory/index.html">Transition.Factory</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

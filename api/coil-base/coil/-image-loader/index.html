@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ImageLoader</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>coil</span>            </a>    </div>
+    <div>2.3.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="coil-base::coil/ImageLoader///PointingToDeclaration//1776664950">
+  <div class="breadcrumbs"><a href="../../index.html">coil-base</a><span class="delimiter">/</span><a href="../index.html">coil</a><span class="delimiter">/</span><span class="current">ImageLoader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Image</span><wbr><span><span>Loader</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ImageLoader</a></div><p class="paragraph">A service class that loads images by executing <a href="../../coil.request/-image-request/index.html">ImageRequest</a>s. Image loaders handle caching, data fetching, image decoding, request management, memory management, and more.</p><p class="paragraph">Image loaders are designed to be shareable and work best when you create a single instance and share it throughout your app.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-629118122%2FClasslikes%2F1776664950" anchor-label="Builder" id="-629118122%2FClasslikes%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-629118122%2FClasslikes%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-1397106502%2FFunctions%2F1776664950" anchor-label="enqueue" id="-1397106502%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="enqueue.html"><span><span>enqueue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1397106502%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="enqueue.html"><span class="token function">enqueue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../coil.request/-image-request/index.html">ImageRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../coil.request/-disposable/index.html">Disposable</a></div><div class="brief "><p class="paragraph">Enqueue the <a href="enqueue.html">request</a> to be executed asynchronously.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1731679001%2FFunctions%2F1776664950" anchor-label="execute" id="-1731679001%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="execute.html"><span><span>execute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1731679001%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../coil.request/-image-request/index.html">ImageRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../coil.request/-image-result/index.html">ImageResult</a></div><div class="brief "><p class="paragraph">Execute the <a href="execute.html">request</a> in the current coroutine scope.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1137304991%2FFunctions%2F1776664950" anchor-label="newBuilder" id="-1137304991%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="new-builder.html"><span>new</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1137304991%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="new-builder.html"><span class="token function">newBuilder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">ImageLoader.Builder</a></div><div class="brief "><p class="paragraph">Create an <a href="-builder/index.html">ImageLoader.Builder</a> that shares the same resources and configuration as this image loader.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2022979066%2FFunctions%2F1776664950" anchor-label="shutdown" id="-2022979066%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="shutdown.html"><span><span>shutdown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2022979066%2FFunctions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="shutdown.html"><span class="token function">shutdown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancel any new and in progress requests, clear the <a href="../../coil.memory/-memory-cache/index.html">MemoryCache</a>, and close any open system resources.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1826662790%2FProperties%2F1776664950" anchor-label="components" id="1826662790%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="components.html"><span><span>components</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1826662790%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="1826662790%2FProperties%2F1776664950" anchor-label="components" id="1826662790%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="components.html">components</a><span class="token operator">: </span><a href="../-component-registry/index.html">ComponentRegistry</a></div><div class="brief "><a data-name="1826662790%2FProperties%2F1776664950" anchor-label="components" id="1826662790%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><p class="paragraph">The components used to fulfil image requests.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1846996598%2FProperties%2F1776664950" anchor-label="defaults" id="-1846996598%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="defaults.html"><span><span>defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1846996598%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="-1846996598%2FProperties%2F1776664950" anchor-label="defaults" id="-1846996598%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="defaults.html">defaults</a><span class="token operator">: </span><a href="../../coil.request/-default-request-options/index.html">DefaultRequestOptions</a></div><div class="brief "><a data-name="-1846996598%2FProperties%2F1776664950" anchor-label="defaults" id="-1846996598%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><p class="paragraph">The default options that are used to fill in unset <a href="../../coil.request/-image-request/index.html">ImageRequest</a> values.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1159081849%2FProperties%2F1776664950" anchor-label="diskCache" id="1159081849%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="disk-cache.html"><span>disk</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1159081849%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="1159081849%2FProperties%2F1776664950" anchor-label="diskCache" id="1159081849%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="disk-cache.html">diskCache</a><span class="token operator">: </span><a href="../../coil.disk/-disk-cache/index.html">DiskCache</a><span class="token operator">?</span></div><div class="brief "><a data-name="1159081849%2FProperties%2F1776664950" anchor-label="diskCache" id="1159081849%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><p class="paragraph">An on-disk cache of previously loaded images.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1426906013%2FProperties%2F1776664950" anchor-label="memoryCache" id="1426906013%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="memory-cache.html"><span>memory</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1426906013%2FProperties%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><a data-name="1426906013%2FProperties%2F1776664950" anchor-label="memoryCache" id="1426906013%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="memory-cache.html">memoryCache</a><span class="token operator">: </span><a href="../../coil.memory/-memory-cache/index.html">MemoryCache</a><span class="token operator">?</span></div><div class="brief "><a data-name="1426906013%2FProperties%2F1776664950" anchor-label="memoryCache" id="1426906013%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a><p class="paragraph">An in-memory cache of previously loaded images.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="437595871%2FExtensions%2F1776664950" anchor-label="executeBlocking" id="437595871%2FExtensions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+        <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../execute-blocking.html"><span>execute</span><wbr><span><span>Blocking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="437595871%2FExtensions%2F1776664950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/WorkerThread.html"><span class="token annotation builtin">WorkerThread</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">ImageLoader</a><span class="token punctuation">.</span><a href="../execute-blocking.html"><span class="token function">executeBlocking</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../coil.request/-image-request/index.html">ImageRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../coil.request/-image-result/index.html">ImageResult</a></div><div class="brief "><p class="paragraph">Execute the <a href="../execute-blocking.html">request</a> and block the current thread until it completes.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
