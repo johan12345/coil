@@ -33,6 +33,8 @@ coil
 module:coil-svg
 coil.decode
 coil.request
+module:coil-test
+coil.test
 module:coil-video
 coil.decode
 coil.request
