@@ -56,8 +56,42 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../coil.annotation/-experimental-coil-api/index.html"><span class="token annotation builtin">ExperimentalCoilApi</span></a></div></div><span class="token keyword">interface </span><a href="index.html">Editor</a></div><p class="paragraph">Edits the values for an entry.</p><p class="paragraph">Calling <a href="metadata.html">metadata</a> or <a href="data.html">data</a> marks that file as dirty so it will be persisted to disk if this editor is committed.</p><p class="paragraph">IMPORTANT: You must <strong>only read or modify the contents</strong> of <a href="metadata.html">metadata</a> or <a href="data.html">data</a>. Renaming, locking, or other mutating file operations can corrupt the disk cache.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="111325101%2FProperties%2F1776664950" anchor-label="data" id="111325101%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data.html"><span><span>data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="111325101%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://square.github.io/okio/3.x/okio/okio/okio/-path/index.html">Path</a></div><div class="brief "><p class="paragraph">Get the data file path for this entry.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-315689272%2FProperties%2F1776664950" anchor-label="metadata" id="-315689272%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="metadata.html"><span><span>metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-315689272%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="metadata.html">metadata</a><span class="token operator">: </span><a href="https://square.github.io/okio/3.x/okio/okio/okio/-path/index.html">Path</a></div><div class="brief "><p class="paragraph">Get the metadata file path for this entry.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
         <div class="table"><a data-name="1853790579%2FFunctions%2F1776664950" anchor-label="abort" id="1853790579%2FFunctions%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
@@ -101,40 +135,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="commit-and-open-snapshot.html"><span class="token function">commitAndOpenSnapshot</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-snapshot/index.html">DiskCache.Snapshot</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Commit the write and call <a href="../open-snapshot.html">openSnapshot</a> for this entry atomically.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="111325101%2FProperties%2F1776664950" anchor-label="data" id="111325101%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="data.html"><span><span>data</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="111325101%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://square.github.io/okio/3.x/okio/okio/okio/-path/index.html">Path</a></div><div class="brief "><p class="paragraph">Get the data file path for this entry.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-315689272%2FProperties%2F1776664950" anchor-label="metadata" id="-315689272%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="metadata.html"><span><span>metadata</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-315689272%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="metadata.html">metadata</a><span class="token operator">: </span><a href="https://square.github.io/okio/3.x/okio/okio/okio/-path/index.html">Path</a></div><div class="brief "><p class="paragraph">Get the metadata file path for this entry.</p></div></div></div>
                 </div>
               </div>
             </div>

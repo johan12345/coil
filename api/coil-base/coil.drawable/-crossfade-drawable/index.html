@@ -56,7 +56,7 @@
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CrossfadeDrawable</a>&nbsp;<span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a>&nbsp;</span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">start<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">end<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>scale<span class="token operator">: </span><a href="../../coil.size/-scale/index.html">Scale</a><span class="token operator"> = </span>Scale.FIT<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>durationMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>DEFAULT_DURATION<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>fadeStart<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>preferExactIntrinsicSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span> : <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>, <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.Callback.html">Drawable.Callback</a>, <a href="https://developer.android.com/reference/kotlin/androidx/vectordrawable/graphics/drawable/Animatable2Compat.html">Animatable2Compat</a></div><p class="paragraph">A <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a> that crossfades from <a href="start.html">start</a> to <a href="end.html">end</a>.</p><p class="paragraph">NOTE: The animation can only be executed once as the <a href="start.html">start</a> drawable is dereferenced at the end of the transition.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>start</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a> to crossfade from.</p></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>end</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a> to crossfade to.</p></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>scale</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The scaling algorithm for <a href="start.html">start</a> and <a href="end.html">end</a>.</p></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>duration</span><wbr><span><span>Millis</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The duration of the crossfade animation.</p></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>fade</span><wbr><span><span>Start</span></span></u></div></span></div><div><div class="title"><p class="paragraph">If false, the start drawable will not fade out while the end drawable fades in.</p></div></div></div></div><div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>prefer</span><wbr><span>Exact</span><wbr><span>Intrinsic</span><wbr><span><span>Size</span></span></u></div></span></div><div><div class="title"><p class="paragraph">If true, this drawable's intrinsic width/height will only be -1 if <a href="start.html">start</a> <strong>and</strong> <a href="end.html">end</a> return -1 for that dimension. If false, the intrinsic width/height will be -1 if <a href="start.html">start</a> <strong>or</strong> <a href="end.html">end</a> return -1 for that dimension. This is useful for views that require an exact intrinsic size to scale the drawable.</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
@@ -90,6 +90,100 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="712781788%2FProperties%2F1776664950" anchor-label="durationMillis" id="712781788%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="duration-millis.html"><span>duration</span><wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="712781788%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="duration-millis.html">durationMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="405795081%2FProperties%2F1776664950" anchor-label="end" id="405795081%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end.html"><span><span>end</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405795081%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="end.html">end</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1890313282%2FProperties%2F1776664950" anchor-label="fadeStart" id="-1890313282%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fade-start.html"><span>fade</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1890313282%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="fade-start.html">fadeStart</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="562185247%2FProperties%2F1776664950" anchor-label="preferExactIntrinsicSize" id="562185247%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="prefer-exact-intrinsic-size.html"><span>prefer</span><wbr><span>Exact</span><wbr><span>Intrinsic</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562185247%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="prefer-exact-intrinsic-size.html">preferExactIntrinsicSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1020405178%2FProperties%2F1776664950" anchor-label="scale" id="1020405178%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scale.html"><span><span>scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1020405178%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="scale.html">scale</a><span class="token operator">: </span><a href="../../coil.size/-scale/index.html">Scale</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1858246050%2FProperties%2F1776664950" anchor-label="start" id="1858246050%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start.html"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1858246050%2FProperties%2F1776664950"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="start.html">start</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -394,100 +488,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="unschedule-drawable.html"><span class="token function">unscheduleDrawable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">who<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token punctuation">, </span></span><span class="parameter ">what<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Runnable.html">Runnable</a></span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="PROPERTY">
-        <h2 class="">Properties</h2>
-        <div class="table"><a data-name="712781788%2FProperties%2F1776664950" anchor-label="durationMillis" id="712781788%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="duration-millis.html"><span>duration</span><wbr><span><span>Millis</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="712781788%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="duration-millis.html">durationMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="405795081%2FProperties%2F1776664950" anchor-label="end" id="405795081%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="end.html"><span><span>end</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405795081%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="end.html">end</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1890313282%2FProperties%2F1776664950" anchor-label="fadeStart" id="-1890313282%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="fade-start.html"><span>fade</span><wbr><span><span>Start</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1890313282%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="fade-start.html">fadeStart</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="562185247%2FProperties%2F1776664950" anchor-label="preferExactIntrinsicSize" id="562185247%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="prefer-exact-intrinsic-size.html"><span>prefer</span><wbr><span>Exact</span><wbr><span>Intrinsic</span><wbr><span><span>Size</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562185247%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="prefer-exact-intrinsic-size.html">preferExactIntrinsicSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1020405178%2FProperties%2F1776664950" anchor-label="scale" id="1020405178%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="scale.html"><span><span>scale</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1020405178%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="scale.html">scale</a><span class="token operator">: </span><a href="../../coil.size/-scale/index.html">Scale</a></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1858246050%2FProperties%2F1776664950" anchor-label="start" id="1858246050%2FProperties%2F1776664950" data-filterable-set=":coil-base:dokkaHtmlPartial/release"></a>
-          <div class="table-row" data-filterable-current=":coil-base:dokkaHtmlPartial/release" data-filterable-set=":coil-base:dokkaHtmlPartial/release">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="start.html"><span><span>start</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1858246050%2FProperties%2F1776664950"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":coil-base:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="start.html">start</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
